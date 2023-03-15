@@ -1,0 +1,54 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,600;1,200;1,500;1,600&display=swap');
+:root {
+    --primary: #016855;
+    --text-color: #292929;
+    --background-color: #faece1;
+
+    --hyperlink-text-color: #f05b29;
+    --hyperlink-text-color-hover: #f5a98f;
+
+    --default-layout-width: 980px;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s ease;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-sm-4 {
+    flex-grow: 1;
+}

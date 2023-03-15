@@ -1,0 +1,141 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    width: var(--default-layout-width);
+    padding: 28px 32px 16px;
+}
+
+.logo {
+    display: block;
+    width: 286px;
+    height: 137px;
+    margin: 0 auto;
+    box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0;
+    }
+
+    &:hover {
+        box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    &:hover .overlay {
+        opacity: 0.05;
+    }
+}
+
+.top-inner {
+    position: relative;
+    .actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+    }
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px 6px 10px;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+    background-color: var(--background-color);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    .icon {
+        font-size: 26px;
+        padding-right: 4px;
+    }
+}
+
+.cart-btn {
+    cursor: pointer;
+    position: relative;
+
+    .icon {
+        font-size: 40px;
+        color: var(--primary);
+    }
+    span {
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.navbar {
+    margin-top: 50px;
+    display: flex;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    ul li {
+        font-size: 20px;
+        white-space: nowrap;
+        font-weight: 600;
+        background-color: var(--background-color);
+        position: relative;
+
+        a {
+            display: block;
+            min-width: 52px;
+            padding: 0 32px;
+            line-height: 52px;
+            color: var(--text-color);
+        }
+
+        &.active {
+            background-color: #e2c6ad;
+        }
+
+        &:not(:last-child):after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background-color: var(--text-color);
+        }
+
+        &:hover {
+            background-color: #fbddd2;
+        }
+    }
+
+    & > img {
+        width: 60px;
+        position: relative;
+        top: -20px;
+    }
+}

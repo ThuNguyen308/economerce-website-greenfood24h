@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    width: var(--default-layout-width);
+    padding: 20px;
+
+    li {
+        cursor: pointer;
+    }
+
+    h2 {
+        padding-bottom: 16px;
+    }
+
+    a,
+    span {
+        display: inline-block;
+        line-height: 40px;
+        white-space: nowrap;
+        color: var(--text-color);
+        white-space: pre-wrap;
+    }
+
+    li:hover .icon {
+        font-size: x-large;
+    }
+
+    .icon {
+        font-size: 20px;
+        padding-right: 8px;
+    }
+
+    .social-media {
+        ul {
+            display: flex;
+            gap: 16px;
+        }
+        .icon {
+            font-size: 30px;
+        }
+    }
+}
